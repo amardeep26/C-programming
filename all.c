@@ -2,19 +2,15 @@
 #include<math.h>
 
 int main (){
-    int a,b,d;
+    int a,b;
     char option,n;
     // printf("enter 0 for end and enter 9 forcontinue ");
     // scanf("%c",&n);
-    printf("\nenter 1 for add -\n enter 2 for sub - \n enter 3 for divison - \n");
-    printf(" enter 4 for multipication-\n enter 5 for roots-\n enter 6 for square-\n enter 7 for table - \n ");
+    printf("\nenter 1 for add -\n enter 2 for sub - \n enter 3 for multipication - \n");
+    printf(" enter 4 for divison-\n enter 5 for roots-\n enter 6 for square-\n enter 7 for table - \n ");
     scanf("%c",&option);
     
-    if(n == 0){
-      return 0;
-    }
-    if(n == 9 )
-    {
+    
      switch (option)
      {
      case '1': 
@@ -74,6 +70,6 @@ int main (){
        printf("worng option \n");
     
       }
-    }
+    
      return 0;
 }
