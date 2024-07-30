@@ -18,12 +18,12 @@ int main(){
    for(int j=0;j<m;j++){
       brr[j][i] = arr[i][j];
    }
-  }int temp=m;
-      m=n;
-      n=temp;
+   }//int temp=m;
+  //     m=n;
+  //     n=temp;
 
-  for(int i=0;i<n;i++){
-   for(int j=0;j<m;j++){
+  for(int i=0;i<m;i++){
+   for(int j=0;j<n;j++){
       printf("%d ",brr[i][j]);
    }
    printf("\n");
