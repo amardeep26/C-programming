@@ -1,7 +1,9 @@
 #include<stdio.h>
 int main(){
     int n;
+    printf("enter digit :-");
     scanf("%d\n",&n);
+    
     switch(n){
             case '1':
             printf("one\n");
