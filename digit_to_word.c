@@ -1,10 +1,20 @@
 #include<stdio.h>
 int main(){
-    int n;
+    int n,r,sum=0;
     printf("enter digit :-");
     scanf("%d\n",&n);
+    int r=0;
+    while (n>0)
+    {
+        r=n%10;
+        sum=sum*10(n%10);
+        n=n/10;
+    }
+     n=sum;
+    while(n>0){
+        r=n%10;
     
-    switch(n){
+    switch(r){
             case '1':
             printf("one\n");
             break;
@@ -36,5 +46,7 @@ int main(){
             printf("Greater then 9\n");
             
         }
+      n=n/10;
+    }  
     return 0;
 }
