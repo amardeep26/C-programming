@@ -1,12 +1,12 @@
 
 #include <stdio.h>
-#define MAX_FILE_NAME 100
+
  
 int main()
 {
     FILE *fp;
     int count = 0; // Line counter (result)
-    char filename[MAX_FILE_NAME];
+    char filename[100];
     char c; // To store a character read from file
  
     // Get file name from user. The file should be
