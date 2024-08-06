@@ -23,7 +23,10 @@ int binarySearch(int arr[], int low, int high, int x)
 
 int main(void)
 {
-    int arr[] = { 2, 3, 4, 10, 40 };
+    int arr[100];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
     int n = sizeof(arr) / sizeof(arr[0]);
     int x = 10;
     int result = binarySearch(arr, 0, n - 1, x);
