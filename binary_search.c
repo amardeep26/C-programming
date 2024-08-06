@@ -21,16 +21,21 @@ int binarySearch(int arr[], int low, int high, int x)
     return -1;
 }
 
-int main(void)
-{
-    int arr[100];
-    for(int i=0;i<n;i++){
+int main
+{    int num;
+      printf("enter how many no. you want:- ");
+      scanf("%d",&num);
+    int arr[num];
+    printf("enter element in sorted form\n");
+    for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
     int n = sizeof(arr) / sizeof(arr[0]);
-    int x = 10;
+    int x;
+  printf("enter element to search");
+   scanf("%d",&x);
     int result = binarySearch(arr, 0, n - 1, x);
    if(result == -1) printf("Element is not present in array");
    else printf("Element is present at index %d\n",result);
-
+  return 0;
 }
