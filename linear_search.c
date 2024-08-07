@@ -30,4 +30,5 @@ int main()
     {
      printf("Search is not Successful\n");
     }
+ return 0;
 }
