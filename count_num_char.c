@@ -1,5 +1,5 @@
 #include <stdio.h> 
-#define MAX_FILE_NAME 100 
+
   
 int main() 
 { 
@@ -7,8 +7,8 @@ int main()
   
     // Character counter (result) 
     int count = 0; 
-  
-    char filename[MAX_FILE_NAME]; 
+  // Name of file and size of file name
+    char filename[100]; 
   
     // To store a character read from file 
     char c; 
