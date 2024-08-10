@@ -37,8 +37,23 @@ int main()
    add[i][j]=a1[i][j]+a2[i][j];
   }
  }
+   printf("\nmatrix 1st\n");
+  for(i=0;i<n;i++){
+    for(j=0;j<m;j++){
+        printf("%d\t",a1[i][j]);
+    }
+    printf("\n");
+  }
 
- printf("Addition of above matrices is\n");
+   printf("\nmatrix 2st\n");
+  for(i=0;i<n;i++){
+    for(j=0;j<m;j++){
+        printf("%d\t",a2[i][j]);
+    }
+    printf("\n");
+  }
+
+ printf("\nAddition of above matrices is\n");
 
   for(i=0;i<n;i++)
  {
