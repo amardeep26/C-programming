@@ -8,7 +8,7 @@ int main(){
     scanf("%d",&m);
     
     
-    printf("enter matrix \n");
+    printf("enter matrix 1st \n");
     for(i=0;i<n;i++){
         for(j=0;j<m;j++){
             scanf("%d",&a1[i][j]);
@@ -23,7 +23,7 @@ int main(){
         if(m==p){
             printf("\nerror\n");}
         else{    
-            printf("enter matrix \n ");
+            printf("enter matrix 2nd \n ");
             for(i=0;i<p;i++){
             for(j=0;j<q;j++){
                 scanf("%d",&a2[i][j]);
@@ -40,7 +40,20 @@ int main(){
             sum=0;
         }
        }
-    }
+    }printf("\nelement of 1st matrix\n);
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            printf("%d,a1[i][j]);
+            }
+        }   
+
+     printf("\nelement of 2st matrix\n);
+     for(i=0;i<p;i++){
+        for(j=0;j<q;j++){
+            printf("%d,a2[i][j]);
+            }
+        }   
+            
     printf("\nmultiplication of matrix\n");
     for(i=0;i<n;i++){
         for(j=0;j<q;j++){
