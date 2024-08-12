@@ -2,12 +2,12 @@
 #include<math.h>
 
 int main (){
-    int a,b;
-    char option,n;
-    // printf("enter 0 for end and enter 9 forcontinue ");
-    // scanf("%c",&n);
-    printf("\nenter 1 for add -\n enter 2 for sub - \n enter 3 for multipication - \n");
-    printf(" enter 4 for divison-\n enter 5 for roots-\n enter 6 for square-\n enter 7 for table - \n ");
+    int a,b,flag=1,x;
+    char option;
+
+    do{
+    printf("\nenter '1' for add -\n enter '2' for sub - \n enter '3' for multipication - \n");
+    printf(" enter '4' for divison-\n enter '5' for roots-\n enter '6' for square-\n enter '7' for table - \n ");
     scanf("%c",&option);
     
     
@@ -70,6 +70,15 @@ int main (){
        printf("worng option \n");
     
       }
+    printf("enter '0' for End and enter '1' for Continue ");
+    scanf("%d",&x);
+    if(x==1){
+        flag=1;
+    }
+    else{
+        flag=0;
+    }
+}while(flag);
     
      return 0;
 }
