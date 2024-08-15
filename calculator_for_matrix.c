@@ -5,9 +5,9 @@ int main (){
     int n,m,p,q,i,j,flag=0;
     
     int option,n;
-    do{
+    //do{
     
-    printf("\nenter 1 for addition of Two matrix -\n enter 2 for sub of Two matrix - \n enter 3 for multipication of Two matrix- \n");
+    printf("\nenter '1' for addition of Two matrix -\n enter '2' for sub of Two matrix - \n enter '3' for Comparing of Two matrix- \n enter '4' for transpose of matrix -\n ");
     scanf("%d",&option);
     
     
@@ -78,6 +78,7 @@ int main (){
                             break;}
         
      case '2':
+         {
 
         printf("Enter number of rows\n");
       scanf("%d",&n);
@@ -140,33 +141,36 @@ int main (){
                          }
 
       
-      break;}
+      break;
+         }
 
       case '3' :
-        int i,j,rows_1,col_1,rows_2,col_2,flag=1;
+          {
+        
+              int flag=1;
          printf("Enter number of rows and columns of matrix 1\n");
-         scanf("%d %d",&rows_1,&col_1);
+         scanf("%d %d",&m,&n);
          printf("Enter number of rows and columns of matrix 2\n");
-          scanf("%d %d",&rows_2,&col_2);
+          scanf("%d %d",&p,&q);
 
-         int a1[rows_1][col_1],a2[rows_2][col_2];
+         int a1[m][n],a2[p][q];
 
-           if(rows_1==rows_2&&col_1==col_2)
+           if(m==p && n==q)
         {
   //Taking input for 1st matrix
      printf("Enter Matrix 1\n");
-     for(i=0;i<rows_1;i++)
+     for(i=0;i<m;i++)
     {
-    for(j=0;j<col_1;j++)
+    for(j=0;j<n;j++)
     {
    scanf("%d",&a1[i][j]);
     }
      }
      //Taking input for 2nd matrix
       printf("Enter Matrix 2\n");
-     for(i=0;i<rows_2;i++)
+     for(i=0;i<p;i++)
     {
-    for(j=0;j<col_2;j++)
+    for(j=0;j<q;j++)
     {
    scanf("%d",&a2[i][j]);
     }
@@ -174,9 +178,9 @@ int main (){
 
     //Printing given matrices
      printf("Matrix 1  is\n");
-     for(i=0;i<rows_1;i++)
+     for(i=0;i<m;i++)
     {
-    for(j=0;j<col_1;j++)
+    for(j=0;j<n;j++)
     {
    printf("%d\t",a1[i][j]);
 
@@ -185,18 +189,18 @@ int main (){
     }
 
     printf("Matrix 2  is\n");
-     for(i=0;i<rows_2;i++)
+     for(i=0;i<p;i++)
     {
-    for(j=0;j<col_2;j++)
+    for(j=0;j<q;j++)
     {
    printf("%d\t",a2[i][j]);
     }
     printf("\n");
     }
       //Comparing of matrix
-    for(i=0;i<rows_1;i++)
+    for(i=0;i<m;i++)
     {
-     for(j=0;j<col_1;j++)
+     for(j=0;j<q;j++)
      {
      if(a1[i][j]!=a2[i][j])
      {
@@ -224,12 +228,11 @@ int main (){
 }
             
        
-       break;}
+       break;
+    }
 
 case '4' : {
-    #include<stdio.h>
-int main(){
-   int n,m;
+    
    printf("enter no. 0f rows-");
    scanf("%d",&n);
    printf("enter no. of columes-");
@@ -259,19 +262,19 @@ int main(){
   }
     break;
 }
-      default: 
+      default: {
        printf("worng option \n");
     
       }
-      printf("enter 1 for end and enter 0 for continue ");
-    scanf("%d",&n);
-     if(n==0){
-         flag=1;
-     }
-     else{
-         flag=0;
-     }
-    }  while(flag);
+    //   printf("enter 1 for end and enter 0 for continue ");
+    // scanf("%d",&n);
+    //  if(n==0){
+    //      flag=1;
+    //  }
+    //  else{
+    //      flag=0;
+    //  }
+    // }  while(flag);
     
     
      return 0;
