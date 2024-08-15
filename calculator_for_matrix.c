@@ -1,10 +1,11 @@
 #include<stdio.h>
 
 
-int main (){
+int main ()
+{
     int n,m,p,q,i,j,flag=0;
     
-    int option,n;
+    int option,x;
     //do{
     
     printf("\nenter '1' for addition of Two matrix -\n enter '2' for sub of Two matrix - \n enter '3' for Comparing of Two matrix- \n enter '4' for transpose of matrix -\n ");
@@ -12,8 +13,11 @@ int main (){
     
     
      switch (option)
-     {
+  {     
+     
      case '1': 
+         {
+         
      printf("Enter number of rows\n");
       scanf("%d",&n);
      printf("Enter number of columns\n");
@@ -75,7 +79,8 @@ int main (){
                          }
        
 
-                            break;}
+                            break;
+             }
         
      case '2':
          {
@@ -224,12 +229,9 @@ int main (){
  {
   printf("Matrices Can not be compared\n");
  }
-
+    break;
 }
             
-       
-       break;
-    }
 
 case '4' : {
     
@@ -266,6 +268,7 @@ case '4' : {
        printf("worng option \n");
     
       }
+}          
     //   printf("enter 1 for end and enter 0 for continue ");
     // scanf("%d",&n);
     //  if(n==0){
