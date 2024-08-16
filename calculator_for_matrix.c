@@ -9,6 +9,7 @@ int main ()
     //do{
     
     printf("\nenter '1' for addition of Two matrix -\n enter '2' for sub of Two matrix - \n enter '3' for Comparing of Two matrix- \n enter '4' for transpose of matrix -\n ");
+    printf("enter '5' for multiplication of two matrix\n ")
     scanf("%d",&option);
     
     
@@ -264,6 +265,74 @@ case '4' : {
   }
     break;
 }
+      case '5' : 
+     {
+                printf("enter no. of rows:- ");
+    scanf("%d",&n);
+    printf("enter no. of columns:- ");
+    scanf("%d",&m);
+    
+      int a1[n][m];
+    printf("enter matrix 1st \n");
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a1[i][j]");
+        }
+    }
+    do{
+        printf("enter no. of rows :- ");
+        scanf("%d",&p);
+        
+        printf("enter no. of columns :- ");
+        scanf("%d",&q);
+        
+        int a2[p][q], mult[n][q];
+        if(m!=p){
+            printf("\nerror\n");}
+        else{    
+            printf("enter matrix 2nd \n ");
+            for(i=0;i<p;i++){
+            for(j=0;j<q;j++){
+                scanf("%d",&a2[i][j]");
+            }
+        }
+       
+       for(i=0;i<n;i++){
+        for(j=0;j<q;j++){
+            int sum;
+            for (int k=0;k<m;k++){
+                sum+= a1[i][k] * a2[k][j];
+            }
+            mult[i][j]=sum;
+            sum=0;
+        }
+ 
+    }
+    printf("\nelement of 1st matrix\n);
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            printf("%d",a1[i][j]");
+            }
+        }   
+
+     printf("\nelement of 2st matrix\n);
+     for(i=0;i<p;i++){
+        for(j=0;j<q;j++){
+            printf("%d",a2[i][j]");
+            }
+        }   
+            
+    printf("\nmultiplication of matrix\n");
+    for(i=0;i<n;i++){
+        for(j=0;j<q;j++){
+            printf("%d\t",mult[i][j]");
+        }
+        printf("\n");
+    }
+
+         
+          break;
+      }
       default: {
        printf("worng option \n");
     
