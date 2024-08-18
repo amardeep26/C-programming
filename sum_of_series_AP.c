@@ -37,4 +37,5 @@ int main()
       series+=diff;
      }
   }
+  return 0;
 }
