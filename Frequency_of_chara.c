@@ -5,7 +5,7 @@ int main()
     int i,k=0,count[26]={0},x;
     char str1[100];
     printf("Enter a sentence\n");
-    gets(str1);
+    fgets(str1,100,stdin);
 
     while(str1[k]!='\0')
     {
