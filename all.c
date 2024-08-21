@@ -8,6 +8,7 @@ int main (){
     do{
     printf("\nenter '1' for add -\n enter '2' for sub - \n enter '3' for multipication - \n");
     printf(" enter '4' for divison-\n enter '5' for roots-\n enter '6' for square-\n enter '7' for table - \n ");
+        printf("enter '8' for arranging num in ascending order\n enter '9' for arranging num in decreasing order");
     scanf("%c",&option);
     
     
@@ -66,6 +67,50 @@ int main (){
         printf("%d*%d=%d\n",i,a,i*a);
        }
        break;}
+         case '8' :{
+         int i,*ptr,max;
+              printf("Enter number of values\n");
+              scanf("%d",&max);
+               int num[max];
+                printf("Enter values for array\n");
+               for(i=0;i<max;i++)
+            {
+                   scanf("%d",&num[i]);
+              }
+
+               ptr=&num[0];//you can also write ptr=num both are same
+
+                 printf("Values printed by incrementing pointer\n");
+                  for(i=0;i<max;i++)
+                     {
+                printf("%d\n",*ptr);
+                         ptr++;
+                       }
+             break;
+                }
+
+         case '9' :
+             {
+               int i,*ptr,max;
+                printf("Enter number of values\n");
+               scanf("%d",&max);
+             int num[max-1];
+               printf("Enter values for array\n");
+          for(i=0;i<max;i++)
+         {
+               scanf("%d",&num[i]);
+         }
+
+          ptr=&num[max-1];
+ 
+            printf("Values printed by decrementing pointer\n");
+           for(i=0;i<max;i++)
+             {
+                 printf("%d\n",*ptr);
+                ptr--;
+                }
+                 break;
+            }
       default: 
        printf("worng option \n");
     
