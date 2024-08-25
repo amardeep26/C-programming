@@ -149,13 +149,8 @@ int main (){
       }
     printf("enter '0' for End and enter '1' for Continue ");
     scanf("%d",&x);
-    if(x==1){
-        flag=1;
-    }
-    else{
-        flag=0;
-    }
-}while(flag);
+    
+}while(x);
     
      return 0;
 }
