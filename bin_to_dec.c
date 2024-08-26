@@ -4,7 +4,8 @@
 #include<stdio.h>
 
 int main(){
-    int num,rem,base=1,decimal=0;
+    int num,rem,base=1,decimal=0,x;
+    do{
     printf("enter binary digits :- ");
      scanf("%d",&num);
      int bin=num;
@@ -16,5 +17,8 @@ int main(){
         base = base * 2;  
     }  
      printf("\nIn decimal %d is %d\n",bin,decimal);
+        printf("enter '0' to end OR enter '1' to continue :- ");
+        scanf("%d",&x);
+    }while(x);
      return 0;
 }
