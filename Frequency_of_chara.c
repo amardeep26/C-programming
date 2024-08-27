@@ -2,8 +2,9 @@
 #include<string.h>
 int main()
 {
-    int i,k=0,count[26]={0},x;
+    int i,k=0,count[26]={0},x,y;
     char str1[100];
+    do{
     printf("Enter a sentence\n");
     fgets(str1,100,stdin);
 
@@ -29,6 +30,9 @@ int main()
         }
 
     }
+        printf("enter '0' to exit OR enter '1' to continoue");
+        scanf("%d",&y);
+    }while(y);
     return 0;
 
 }
