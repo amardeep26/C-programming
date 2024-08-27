@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(){
-    int rows,columes,i,j,flag=1;
+    int rows,columes,i,j,flag=1,x;
+    do{
     printf("enter no. of rows :- ");
     scanf("%d",&rows);
     printf("enter no. of columes :- ");
@@ -48,7 +49,9 @@ int main(){
    else{
     printf("\nBoth matrices are equal\n");
    }
-
+        printf("enter '0' to exit OR enter '1' to continues compare");
+        scanf("%d",&x);
+    }while(x);
   return 0;
 
 }
