@@ -22,7 +22,9 @@ int binarySearch(int arr[], int low, int high, int x)
 }
 
 int main
-{    int num;
+{    int num,x;
+ do{
+ 
       printf("enter how many no. you want:- ");
       scanf("%d",&num);
     int arr[num];
@@ -37,5 +39,8 @@ int main
     int result = binarySearch(arr, 0, n - 1, x);
    if(result == -1) printf("Element is not present in array");
    else printf("Element is present at index %d\n",result);
+     printf("\nenter '0' to exit OR '1' to contineus :- ");
+     scanf("%d",&x);
+ }while(x);   
   return 0;
 }
