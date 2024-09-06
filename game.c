@@ -71,15 +71,15 @@ int main()
     
 
 
-   printf("\n%d\n", number1);
-   printf("\n%d\n", number2);
-   printf("\n%d\n", number3);
+   printf("\nDice 1:- %d\n", number1);
+   printf("\nDice 2:- %d\n", number2);
+   printf("\nDice 3:- %d\n", number3);
     
       printf("\n\n   your score is :-  %d\n\n",count);
 
     }while (count);
-    count=total;
-     printf("\n\n           your total score is  > - -   %d\n\n",total);
+    // count=total;
+    //  printf("\n\n           your total score is  > - -   %d\n\n",total);
     
    return 0;
 }
