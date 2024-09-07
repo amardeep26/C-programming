@@ -1,4 +1,4 @@
-//------------: PRINT RANDM NUMBER :----------------
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,6 +7,8 @@
 int main()
 {   
     int pre,x,sum,count=0,total;
+    int bonus=10;
+    printf(" \n\n  you have '10' Bonus score, so enjoy your game ");
     do{
    printf(" \n\n\n------------:GUEESE THE SUM OF THREE DICE:------------\n\n\n ");
    printf("     If The Sum Is :- Between '0' TO '6' (include 6) Press '0' :-\n\n ");
@@ -30,11 +32,11 @@ int main()
         }
         if(sum>=7 && sum<=12){
             printf("\nyou loss\n");
-             count--;
+             bonus--;
         }
         if(sum>=0 && sum<=6){
             printf("\nyou loss\n");
-             count--;
+             bonus--;
         }
     }
     
@@ -46,11 +48,11 @@ int main()
         }
         if(sum>=13 && sum<=18){
             printf("\nyou loss\n");
-             count--;
+             bonus--;
         }
         if(sum>=0 && sum<=6){
             printf("\nyou loss\n");
-             count--;
+             bonus--;
         }
     }
     else{
@@ -60,11 +62,11 @@ int main()
           }
          if(sum>=7 && sum<=12) {
              printf("\nyou loss\n");
-             count--;
+             bonus--;
          }
          if(sum>=13 && sum<=18){
              printf("\nyou loss\n");
-             count--;
+             bonus--;
          }
     }
     
@@ -76,7 +78,13 @@ int main()
    printf("\nDice 3:- %d\n", number3);
     
       printf("\n\n   your score is :-  %d\n\n",count);
-
+     if(bonus <= 4){
+        printf("  \n\n  You have only '%d' Bonus score left, so play carefully your GaMe\n\n",bonus);
+     }
+        else{
+            printf("you have '%d' Bonus score, so enjoy your game ",bonus);
+        }
+         
     }while (count);
     // count=total;
     //  printf("\n\n           your total score is  > - -   %d\n\n",total);
